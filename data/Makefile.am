@@ -1,7 +1,7 @@
 uidir = $(datadir)/piwiz
 
-ui_in_files = 	piwiz.ui \
-				raspberry-pi-logo.png \
+ui_in_files = 	wiz.ui \
+				hooverhigh-logo.png \
 				srprompt.wav
 
 ui_DATA = $(ui_in_files)
