@@ -203,7 +203,7 @@
                   <object class="GtkImage" id="image1">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="pixbuf">raspberry-pi-logo.png</property>
+                    <property name="pixbuf">hooverhigh-logo.png</property>
                     <property name="pixel-size">96</property>
                   </object>
                   <packing>
@@ -216,7 +216,7 @@
                   <object class="GtkLabel" id="p0label">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="label" translatable="yes">Welcome to the Raspberry Pi Desktop!
+                    <property name="label" translatable="yes">Welcome to the HooverHighOS Desktop!
 
 Before you start using it, there are a few things to set up.
 
