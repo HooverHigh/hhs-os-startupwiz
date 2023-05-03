@@ -343,18 +343,18 @@ msgid "label"
 msgstr ""
 
 #: ../data/startup-wiz.ui.h:4
-msgid "Welcome to Raspberry Pi"
-msgstr "Welcome to Raspberry Pi"
+msgid "Welcome to HHSOS"
+msgstr "Welcome to HHSOS"
 
 #: ../data/startup-wiz.ui.h:5
 msgid ""
-"Welcome to the Raspberry Pi Desktop!\n"
+"Welcome to the HooverHighOS Desktop!\n"
 "\n"
 "Before you start using it, there are a few things to set up.\n"
 "\n"
 "Press 'Next' to get started. "
 msgstr ""
-"Welcome to the Raspberry Pi Desktop!\n"
+"Welcome to the HooverHighOS Desktop!\n"
 "\n"
 "Before you start using it, there are a few things to set up.\n"
 "\n"
