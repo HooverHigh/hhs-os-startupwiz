@@ -1,4 +1,4 @@
 #!/usr/bin/dh-exec
-src/piwizhs => /usr/bin/piwiz
+src/startup-wizhs => /usr/bin/startup-wiz
 src/hdmi-audio-select => /usr/bin/hdmi-audio-select
 usr/share/* usr/share
