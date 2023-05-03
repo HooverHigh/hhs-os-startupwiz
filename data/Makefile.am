@@ -1,6 +1,6 @@
-uidir = $(datadir)/piwiz
+uidir = $(datadir)/startup-wiz
 
-ui_in_files = 	wiz.ui \
+ui_in_files = 	startup-wiz.ui \
 				hooverhigh-logo.png \
 				srprompt.wav
 
