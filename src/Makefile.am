@@ -1,13 +1,13 @@
-bin_PROGRAMS = piwiz \
-			   piwizhs
+bin_PROGRAMS = startup-wiz \
+			   startup-wizhs
 
 dist_bin_SCRIPTS = hdmi-audio-select
 
-piwiz_CFLAGS = \
+startup-wiz_CFLAGS = \
 	-I$(top_srcdir) \
 	-DPACKAGE_LIB_DIR=\""$(libdir)"\" \
-	-DPACKAGE_DATA_DIR=\""$(datadir)/piwiz"\" \
-	-DPACKAGE_UI_DIR=\""$(datadir)/piwiz/ui"\" \
+	-DPACKAGE_DATA_DIR=\""$(datadir)/startup-wiz"\" \
+	-DPACKAGE_UI_DIR=\""$(datadir)/startup-wiz/ui"\" \
 	-DPACKAGE_BIN_DIR=\""$(bindir)"\" \
 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
 	-I$(srcdir)/libdhcpcd \
@@ -16,31 +16,31 @@ piwiz_CFLAGS = \
 	$(G_CAST_CHECKS) \
 	-Wall
 
-piwiz_SOURCES = piwiz.c \
+startup-wiz_SOURCES = startup-wiz.c \
 		libdhcpcd/config.c \
 		libdhcpcd/dhcpcd.c \
 		libdhcpcd/wpa.c \
 		dhcpcd-gtk/wpa.c \
 		dhcpcd-gtk/main.c
 
-piwiz_includedir = $(includedir)/piwiz
+startup-wiz_includedir = $(includedir)/startup-wiz
 
-piwiz_include_HEADERS =
+startup-wiz_include_HEADERS =
 
-piwiz_LDFLAGS = $(DYNAMIC_FLAGS) -lcrypt
-piwiz_DEPENDENCIES_EXTRA = $(BUILTIN_PLUGINS)
+startup-wiz_LDFLAGS = $(DYNAMIC_FLAGS) -lcrypt
+startup-wiz_DEPENDENCIES_EXTRA = $(BUILTIN_PLUGINS)
 
-piwiz_LDADD = \
+startup-wiz_LDADD = \
 		$(BUILTIN_PLUGINS) \
 		$(PACKAGE_LIBS) \
 		$(X11_LIBS) \
 		$(INTLLIBS)
 
-piwizhs_CFLAGS = \
+startup-wizhs_CFLAGS = \
 	-I$(top_srcdir) \
 	-DPACKAGE_LIB_DIR=\""$(libdir)"\" \
-	-DPACKAGE_DATA_DIR=\""$(datadir)/piwiz"\" \
-	-DPACKAGE_UI_DIR=\""$(datadir)/piwiz/ui"\" \
+	-DPACKAGE_DATA_DIR=\""$(datadir)/startup-wiz"\" \
+	-DPACKAGE_UI_DIR=\""$(datadir)/startup-wiz/ui"\" \
 	-DPACKAGE_BIN_DIR=\""$(bindir)"\" \
 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
 	-DHOMESCHOOL \
@@ -50,21 +50,21 @@ piwizhs_CFLAGS = \
 	$(G_CAST_CHECKS) \
 	-Wall
 
-piwizhs_SOURCES = piwiz.c \
+startup-wizhs_SOURCES = startup-wiz.c \
 		libdhcpcd/config.c \
 		libdhcpcd/dhcpcd.c \
 		libdhcpcd/wpa.c \
 		dhcpcd-gtk/wpa.c \
 		dhcpcd-gtk/main.c
 
-piwizhs_includedir = $(includedir)/piwiz
+startup-wizhs_includedir = $(includedir)/startup-wiz
 
-piwizhs_include_HEADERS =
+startup-wizhs_include_HEADERS =
 
-piwizhs_LDFLAGS = $(DYNAMIC_FLAGS) -lcrypt
-piwizhs_DEPENDENCIES_EXTRA = $(BUILTIN_PLUGINS)
+startup-wizhs_LDFLAGS = $(DYNAMIC_FLAGS) -lcrypt
+startup-wizhs_DEPENDENCIES_EXTRA = $(BUILTIN_PLUGINS)
 
-piwizhs_LDADD = \
+startup-wizhs_LDADD = \
 		$(BUILTIN_PLUGINS) \
 		$(PACKAGE_LIBS) \
 		$(X11_LIBS) \
