@@ -269,7 +269,7 @@ static const char keyboard_map[][13] = {
 
 #define MAX_KBS 17
 static const char kb_countries[MAX_KBS][3] = {
-    "GB",   // default if no Pi keyboard found
+    "US",   // default if no Pi keyboard found
     "GB",
     "FR",
     "ES",
@@ -309,7 +309,7 @@ static const char kb_langs[MAX_KBS][3] = {
 };
 
 static const char kb_tzs[MAX_KBS][20] = {
-    "Europe/London",    // default if no Pi keyboard found
+    "America/New_York",    // default if no Pi keyboard found
     "Europe/London",
     "Europe/Paris",
     "Europe/Madrid",
