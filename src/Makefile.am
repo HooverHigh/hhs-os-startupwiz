@@ -16,7 +16,7 @@ startupwiz_CFLAGS = \
 	$(G_CAST_CHECKS) \
 	-Wall
 
-startupwiz_SOURCES = startupwiz.c \
+startupwiz_SOURCES = startup-wiz.c \
 		libdhcpcd/config.c \
 		libdhcpcd/dhcpcd.c \
 		libdhcpcd/wpa.c \
@@ -50,7 +50,7 @@ startupwizhs_CFLAGS = \
 	$(G_CAST_CHECKS) \
 	-Wall
 
-startupwizhs_SOURCES = startupwiz.c \
+startupwizhs_SOURCES = startup-wiz.c \
 		libdhcpcd/config.c \
 		libdhcpcd/dhcpcd.c \
 		libdhcpcd/wpa.c \
