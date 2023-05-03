@@ -4,8 +4,8 @@ set -e
 
 case "${1}" in
   remove|purge|abort-install)
-    if [ -e /etc/xdg/autostart/piwiz.desktop ]; then
-        rm /etc/xdg/autostart/piwiz.desktop
+    if [ -e /etc/xdg/autostart/startup-wiz.desktop ]; then
+        rm /etc/xdg/autostart/startup-wiz.desktop
     fi
     ;;
 
