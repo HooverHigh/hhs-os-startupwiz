@@ -561,7 +561,7 @@ static void error_box (char *msg)
     {
         GtkBuilder *builder;
 
-        builder = gtk_builder_new_from_file (PACKAGE_DATA_DIR "/piwiz.ui");
+        builder = gtk_builder_new_from_file (PACKAGE_DATA_DIR "/wiz.ui");
 
         err_dlg = (GtkWidget *) gtk_builder_get_object (builder, "error");
         gtk_window_set_transient_for (GTK_WINDOW (err_dlg), GTK_WINDOW (main_dlg));
@@ -598,7 +598,7 @@ static void message (char *msg, int wait, int dest_page, int prog, gboolean puls
     {
         GtkBuilder *builder;
 
-        builder = gtk_builder_new_from_file (PACKAGE_DATA_DIR "/piwiz.ui");
+        builder = gtk_builder_new_from_file (PACKAGE_DATA_DIR "/wiz.ui");
 
         msg_dlg = (GtkWidget *) gtk_builder_get_object (builder, "modal");
         gtk_window_set_transient_for (GTK_WINDOW (msg_dlg), GTK_WINDOW (main_dlg));
@@ -708,7 +708,7 @@ static gboolean loc_done (gpointer data)
         putenv (language);
         putenv (lcall);
 
-        execl ("/usr/bin/piwiz", "piwiz", "--langset", lc, cc, NULL);
+        execl ("/usr/bin/startup-wiz", "startup-wiz", "--langset", lc, cc, NULL);
         exit (0);
     }
     else
@@ -2506,7 +2506,7 @@ int main (int argc, char *argv[])
     ap_list = gtk_list_store_new (7, G_TYPE_STRING, GDK_TYPE_PIXBUF, GDK_TYPE_PIXBUF, G_TYPE_INT, G_TYPE_INT, G_TYPE_POINTER, G_TYPE_STRING);
 
     // build the UI
-    builder = gtk_builder_new_from_file (PACKAGE_DATA_DIR "/piwiz.ui");
+    builder = gtk_builder_new_from_file (PACKAGE_DATA_DIR "/wiz.ui");
 
     msg_dlg = NULL;
     err_dlg = NULL;
