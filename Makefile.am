@@ -6,7 +6,7 @@ SUBDIRS = src data po
 
 EXTRA_DIST = \
         autogen.sh \
-        piwiz.pc.in
+        startup-wiz.pc.in
 
 install-data-local:
 	@$(NORMAL_INSTALL)
